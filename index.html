@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Anuj Yadav | Data Science Engineer &amp; Machine Learning Enthusiast</title>
+<meta name="description" content="Portfolio of Anuj Yadav: Python, SQL, data analysis and machine learning projects, internships and hackathons.">
+<meta property="og:title" content="Anuj Yadav | Data Science Engineer">
+<meta property="og:description" content="Python, SQL, data analysis and machine learning projects, internships and hackathons.">
+<meta property="og:type" content="website">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='22' fill='%230b1220'/%3E%3Ctext x='50' y='66' font-size='52' text-anchor='middle' fill='%2338bdf8' font-family='sans-serif' font-weight='700'%3EAY%3C/text%3E%3C/svg%3E">
+<style>
+:root{--bg:#0b1220;--surf:#111a2e;--surf2:#16213a;--line:#25324f;--tx:#e8edf7;--mut:#a3b0c8;--ac:#38bdf8;--ac2:#a78bfa;--r:14px}
+:root[data-theme=light]{--bg:#f6f7fb;--surf:#fff;--surf2:#eef1f8;--line:#d9deec;--tx:#10182b;--mut:#4a5670;--ac:#0369a1;--ac2:#6d28d9}
+*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:72px}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{animation:none!important;transition:none!important}}
+body{margin:0;background:var(--bg);color:var(--tx);font:17px/1.7 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;background-image:linear-gradient(var(--line) 1px,transparent 1px),linear-gradient(90deg,var(--line) 1px,transparent 1px);background-size:64px 64px;background-attachment:fixed}
+body::before{content:"";position:fixed;inset:0;background:var(--bg);opacity:.93;z-index:-1}
+a{color:var(--ac)}a:focus-visible,button:focus-visible,input:focus-visible,textarea:focus-visible,summary:focus-visible{outline:3px solid var(--ac);outline-offset:3px;border-radius:6px}
+.wrap{max-width:1080px;margin:0 auto;padding:0 20px}section{padding:84px 0}
+h1,h2,h3{line-height:1.2;margin:0 0 .5em}h2{font-size:clamp(1.7rem,4vw,2.3rem)}
+.eyebrow{font:600 .8rem/1 ui-monospace,Menlo,monospace;letter-spacing:.14em;text-transform:uppercase;color:var(--ac);margin-bottom:12px}
+p{max-width:68ch}.mut{color:var(--mut)}
+header{position:sticky;top:0;z-index:20;background:color-mix(in srgb,var(--bg) 88%,transparent);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+nav{display:flex;align-items:center;justify-content:space-between;height:64px;gap:12px}
+.brand{font-weight:700;text-decoration:none;color:var(--tx)}
+.links{display:flex;gap:4px;align-items:center}.links a{padding:8px 10px;border-radius:8px;color:var(--mut);text-decoration:none;font-size:.93rem}
+.links a:hover,.links a.on{color:var(--tx);background:var(--surf2)}.links a.on{box-shadow:inset 0 -2px var(--ac)}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:11px 18px;border-radius:10px;border:1px solid var(--line);background:var(--surf);color:var(--tx);font:600 .95rem inherit;cursor:pointer;text-decoration:none}
+.btn.p{background:linear-gradient(135deg,var(--ac),var(--ac2));color:#04101f;border:0}.btn:hover{transform:translateY(-1px)}.btn{transition:transform .15s}
+#menu{display:none}
+@media(max-width:900px){#menu{display:inline-flex}.links{display:none;position:absolute;top:64px;left:0;right:0;flex-direction:column;align-items:stretch;background:var(--bg);padding:12px 20px;border-bottom:1px solid var(--line)}.links.open{display:flex}}
+.hero{display:grid;grid-template-columns:1.1fr .9fr;gap:40px;align-items:center;min-height:calc(100vh - 64px);padding:48px 0}
+@media(max-width:900px){.hero{grid-template-columns:1fr;min-height:0}}
+.hero h1{font-size:clamp(2.4rem,7vw,4rem);margin-bottom:.2em}.grad{background:linear-gradient(135deg,var(--ac),var(--ac2));-webkit-background-clip:text;background-clip:text;color:transparent}
+.row{display:flex;flex-wrap:wrap;gap:12px;margin-top:22px}
+.card{background:var(--surf);border:1px solid var(--line);border-radius:var(--r);padding:22px}
+.grid{display:grid;gap:18px;grid-template-columns:repeat(auto-fit,minmax(260px,1fr))}
+.tag{display:inline-block;font:500 .78rem ui-monospace,Menlo,monospace;padding:4px 10px;border-radius:999px;background:var(--surf2);border:1px solid var(--line);margin:3px 4px 3px 0;color:var(--mut)}
+.viz{background:var(--surf);border:1px solid var(--line);border-radius:20px;padding:18px}
+.viz .node{animation:pulse 3s ease-in-out infinite}@keyframes pulse{50%{opacity:.55}}
+.tl{border-left:2px solid var(--line);margin-left:8px;padding-left:24px}.tl>.card{margin-bottom:18px;position:relative}
+.tl>.card::before{content:"";position:absolute;left:-33px;top:28px;width:14px;height:14px;border-radius:50%;background:var(--ac);border:3px solid var(--bg)}
+.meta{color:var(--mut);font-size:.92rem}ul{padding-left:20px;margin:.5em 0}li{margin:.25em 0}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:20px}.chip{cursor:pointer}.chip[aria-pressed=true]{background:var(--ac);color:#04101f;border-color:var(--ac)}
+details summary{cursor:pointer;color:var(--ac);margin-top:10px}
+form{display:grid;gap:14px}label{display:grid;gap:6px;font-weight:600;font-size:.92rem}
+input,textarea{font:inherit;background:var(--surf2);color:var(--tx);border:1px solid var(--line);border-radius:10px;padding:12px}
+.hp{position:absolute;left:-9999px}#fs{min-height:1.4em}.err{color:#f87171}.ok{color:#4ade80}
+footer{border-top:1px solid var(--line);padding:36px 0;color:var(--mut);font-size:.93rem}footer .wrap{display:flex;flex-wrap:wrap;gap:16px;justify-content:space-between}
+footer a{color:var(--mut);margin-right:12px}
+.reveal{opacity:0;transform:translateY(14px);transition:opacity .6s,transform .6s}.reveal.in{opacity:1;transform:none}
+</style>
+</head>
+<body>
+<header><div class="wrap"><nav aria-label="Primary">
+<a class="brand" href="#home">Anuj Yadav</a>
+<button class="btn" id="menu" aria-expanded="false" aria-controls="links">Menu</button>
+<div class="links" id="links">
+<a href="#home">Home</a><a href="#about">About</a><a href="#skills">Skills</a><a href="#experience">Experience</a><a href="#projects">Projects</a><a href="#achievements">Achievements</a><a href="#education">Education</a><a href="#contact">Contact</a>
+<button class="btn" id="theme" aria-label="Toggle light or dark theme">Theme</button>
+<a class="btn p" href="Anuj_Yadav_Resume.pdf" download="Anuj_Yadav_Resume.pdf">Resume</a>
+</div></nav></div></header>
+
+<main class="wrap">
+<section id="home" class="hero">
+<div>
+<div class="eyebrow">Data Science · Machine Learning</div>
+<h1>Anuj Yadav</h1>
+<p style="font-size:1.25rem;margin:0 0 14px"><span class="grad">Data Science Engineer | Machine Learning Enthusiast</span></p>
+<p class="mut">I turn raw data into insight using Python, SQL, data analysis and machine learning, and I build data-driven projects from face recognition to adaptive traffic control.</p>
+<div class="row">
+<a class="btn p" href="#projects">Explore My Projects</a>
+<a class="btn" href="Anuj_Yadav_Resume.pdf" download="Anuj_Yadav_Resume.pdf">Download Resume</a>
+<a class="btn" href="#contact">Contact Me</a>
+</div>
+<div class="row" style="margin-top:14px">
+<a class="btn" href="https://github.com/anujjyadav" rel="noopener" target="_blank">GitHub</a>
+<a class="btn" href="https://www.linkedin.com/in/anuj-yadav-60562a369/" rel="noopener" target="_blank">LinkedIn</a>
+</div>
+</div>
+<div class="viz" role="img" aria-label="Diagram of a machine learning workflow: data, preprocessing, features, model, insight">
+<svg viewBox="0 0 400 330" width="100%" aria-hidden="true">
+<defs><linearGradient id="g" x1="0" x2="1"><stop offset="0" stop-color="#38bdf8"/><stop offset="1" stop-color="#a78bfa"/></linearGradient></defs>
+<g stroke="url(#g)" stroke-width="1.5" fill="none" opacity=".8"><path d="M70 60 L200 40 L330 60"/><path d="M70 60 L200 130 L330 60"/><path d="M70 160 L200 130 L330 160"/><path d="M70 160 L200 220 L330 160"/><path d="M70 260 L200 220 L330 260"/><path d="M70 260 L200 40 M330 60 L200 220 M70 160 L200 40"/></g>
+<g fill="#0b1220" stroke="url(#g)" stroke-width="2"><circle class="node" cx="70" cy="60" r="12"/><circle class="node" cx="70" cy="160" r="12" style="animation-delay:.5s"/><circle class="node" cx="70" cy="260" r="12" style="animation-delay:1s"/><circle class="node" cx="200" cy="40" r="12" style="animation-delay:1.5s"/><circle class="node" cx="200" cy="130" r="12" style="animation-delay:.8s"/><circle class="node" cx="200" cy="220" r="12" style="animation-delay:.3s"/><circle class="node" cx="330" cy="60" r="12" style="animation-delay:1.2s"/><circle class="node" cx="330" cy="160" r="12" style="animation-delay:1.8s"/><circle class="node" cx="330" cy="260" r="12" style="animation-delay:.1s"/></g>
+<g fill="#a3b0c8" font-family="ui-monospace,monospace" font-size="13" text-anchor="middle"><text x="70" y="305">Data</text><text x="200" y="305">Features</text><text x="330" y="305">Insight</text></g>
+</svg></div>
+</section>
+
+<section id="about" class="reveal"><div class="eyebrow">About</div><h2>Turning raw data into meaningful insight</h2>
+<p>I'm a data and machine learning enthusiast who enjoys building practical, data-driven solutions. I work with Python and SQL, solve problems algorithmically, and have hands-on experience in data analysis, preprocessing, feature engineering and machine learning.</p>
+<p>My project work spans a face-recognition attendance system and an AI-based traffic optimization simulator. I have competed in hackathons, presented a paper on AI and machine learning at a national student conference, and completed two internships in 2026. I'm currently pursuing a B.Tech at Jagran Lakecity University, Bhopal.</p></section>
+
+<section id="skills" class="reveal"><div class="eyebrow">Skills</div><h2>Tools I work with</h2><div class="grid" id="skillGrid"></div>
+<p class="meta">Additional tools in the Projects section come from repository dependency files.</p></section>
+
+<section id="experience" class="reveal"><div class="eyebrow">Experience</div><h2>Internships</h2><div class="tl" id="exp"></div></section>
+
+<section id="projects" class="reveal"><div class="eyebrow">Projects</div><h2>Featured work</h2>
+<div class="chips" id="chips" role="group" aria-label="Filter projects"></div><div class="grid" id="projGrid"></div></section>
+
+<section id="achievements" class="reveal"><div class="eyebrow">Achievements</div><h2>Hackathons and conferences</h2><div class="grid" id="ach"></div></section>
+
+<section id="education" class="reveal"><div class="eyebrow">Education</div><h2>Academic background</h2><div class="tl" id="edu"></div></section>
+
+<section id="profiles" class="reveal"><div class="eyebrow">Profiles</div><h2>Find me online</h2>
+<div class="grid"><a class="card" href="https://github.com/anujjyadav" target="_blank" rel="noopener"><h3>GitHub</h3><span class="mut">github.com/anujjyadav</span></a>
+<a class="card" href="https://www.linkedin.com/in/anuj-yadav-60562a369/" target="_blank" rel="noopener"><h3>LinkedIn</h3><span class="mut">linkedin.com/in/anuj-yadav-60562a369</span></a></div></section>
+
+<section id="contact" class="reveal"><div class="eyebrow">Contact</div><h2>Let's talk</h2>
+<div class="grid" style="grid-template-columns:repeat(auto-fit,minmax(300px,1fr))">
+<div><p><strong>Email:</strong> <a href="mailto:anujyadav5272@gmail.com">anujyadav5272@gmail.com</a></p><p><strong>Phone:</strong> <a href="tel:+917415034244">+91 7415034244</a></p></div>
+<form id="cf" novalidate>
+<label>Name<input name="name" required autocomplete="name"></label>
+<label>Email<input name="email" type="email" required autocomplete="email"></label>
+<label>Subject<input name="subject" required></label>
+<label>Message<textarea name="message" rows="5" required></textarea></label>
+<input class="hp" name="_gotcha" tabindex="-1" autocomplete="off" aria-hidden="true">
+<button class="btn p" id="send" type="submit">Send message</button><div id="fs" role="status" aria-live="polite"></div>
+</form></div></section>
+</main>
+
+<footer><div class="wrap"><div><strong style="color:var(--tx)">Anuj Yadav</strong><br>Data science and machine learning, built with care.</div>
+<div><a href="#about">About</a><a href="#projects">Projects</a><a href="#contact">Contact</a><br><a href="https://github.com/anujjyadav">GitHub</a><a href="https://www.linkedin.com/in/anuj-yadav-60562a369/">LinkedIn</a><a href="mailto:anujyadav5272@gmail.com">Email</a></div>
+<div>&copy; <span id="yr"></span> Anuj Yadav</div></div></footer>
+
+<script>
+// Set to your Formspree (or similar) endpoint, e.g. "https://formspree.io/f/xxxxxxx". Leave empty to use the mailto fallback.
+const FORM_ENDPOINT = "";
+const EMAIL = "anujyadav5272@gmail.com";
+const $ = s => document.querySelector(s);
+const tags = a => a.map(t => `<span class="tag">${t}</span>`).join("");
+const skills = {"Programming and Data":["Python","SQL","Pandas","NumPy"],"Machine Learning and Analysis":["Machine Learning","Scikit-learn","Data Analysis","Data Visualization"],"Productivity and Reporting":["Excel","Dashboard Development","Pivot Tables"],"Development Tools":["Jupyter Notebook"]};
+$("#skillGrid").innerHTML = Object.entries(skills).map(([k,v]) => `<div class="card"><h3>${k}</h3>${tags(v)}</div>`).join("");
+
+const exp = [
+{org:"The Developers Arena, India",role:"Data Science & Analytics Intern",d:"June 2026 – July 2026",s:"Completed eight internship tasks spanning Python programming, data analysis, sales dashboards, statistical analysis and business insights.",r:["Python programming and data analysis","Sales dashboards","Statistical analysis","Extracting business insights"],t:["Python","Data Analysis","Dashboards"]},
+{org:"SaiKet Systems, India",role:"Machine Learning Intern",d:"May 2026",s:"Applied preprocessing, exploratory analysis, feature engineering and machine learning to predict car prices and passenger survival, and analyzed unemployment trends.",r:["Data preprocessing and exploratory data analysis","Feature engineering","Machine learning car price prediction","Titanic passenger survival prediction","Unemployment trend analysis using Python"],t:["Python","Machine Learning","Feature Engineering","EDA"]}];
+$("#exp").innerHTML = exp.map(e => `<div class="card"><h3>${e.role}</h3><div class="meta">${e.org} · ${e.d}</div><p>${e.s}</p><details><summary>Key responsibilities</summary><ul>${e.r.map(x=>`<li>${x}</li>`).join("")}</ul></details><div style="margin-top:10px">${tags(e.t)}</div></div>`).join("");
+
+const P = [
+{n:"Smart Attendance System Using Face Recognition",c:"Computer Vision",u:"https://github.com/anujjyadav/smartattendance",d:"Automates student registration, attendance marking and record management through a user-friendly interface. Modular Python scripts and an SQLite database provide persistent storage and attendance tracking.",f:["Student registration","Attendance marking","Attendance record viewing","SQLite persistence","Modular scripts: register_student.py, mark_attendance.py, view_attendance.py, attendance_gui.py"],t:["Python","SQLite","OpenCV","face-recognition","dlib","Streamlit","Pandas","NumPy","Pillow"],note:"Libraries are taken from the repository's requirements.txt."},
+{n:"Traffic Flow Optimization",c:"Computer Vision",u:"https://github.com/anujjyadav/Traffic-flow-optimization",d:"An AI-based system that uses YOLOv5 to analyze real-time vehicle density and dynamically adjust traffic signal timings, simulating and controlling adaptive traffic signals.",f:["YOLOv5 vehicle-density analysis","Dynamic signal timing","Adaptive signal simulation","Multithreading"],t:["Python","PyTorch","YOLOv5","Pygame","NumPy","Multithreading"],note:"Description from my resume."}];
+["Customer-Churn-Predictor","House-Price-Estimator","Movie-Recommendation-System","Sales Forecasting","Energy Consumption Analysis","Image Classification"].forEach(n => P.push({n:n.replace(/-/g," "),c:"Cloudcredits",u:"https://github.com/anujjyadav/Cloudcredits/tree/main/"+encodeURIComponent(n),d:"One of the project folders in my Cloudcredits repository.",f:[],t:["Python","Machine Learning"],note:""}));
+const cats = ["All",...new Set(P.map(p=>p.c))];
+let cur = "All";
+function draw(){
+ $("#chips").innerHTML = cats.map(c=>`<button class="btn chip" aria-pressed="${c===cur}" data-c="${c}">${c}</button>`).join("");
+ $("#projGrid").innerHTML = P.filter(p=>cur==="All"||p.c===cur).map(p=>`<article class="card"><h3>${p.n}</h3><p>${p.d}</p>${p.f.length?`<details><summary>Features</summary><ul>${p.f.map(x=>`<li>${x}</li>`).join("")}</ul>${p.note?`<p class="meta">${p.note}</p>`:""}</details>`:""}<div style="margin:10px 0">${tags(p.t)}</div><a class="btn" href="${p.u}" target="_blank" rel="noopener">View on GitHub</a></article>`).join("");
+}
+$("#chips").addEventListener("click",e=>{const b=e.target.closest("[data-c]");if(b){cur=b.dataset.c;draw();$("#chips [aria-pressed=true]").focus()}});draw();
+
+const A = [["Smart Synergy Hackathon 2025","2nd place","Theme: Smart Synergy: AI, Robotics & IoT. Career College, Bhopal. Represented Jagran Lakecity University."],["National Level TechHack 2.0 (2026)","Participant","Oriental Institute of Science & Technology, Bhopal. Represented Jagran Lakecity University."],["National Student Conference, RAEMPS 2025","Paper presented","Presented a paper on Artificial Intelligence and Machine Learning. SAGE Group of Institutions, Bhopal."]];
+$("#ach").innerHTML = A.map(a=>`<div class="card"><span class="tag">${a[1]}</span><h3>${a[0]}</h3><p class="mut">${a[2]}</p></div>`).join("");
+const E = [["B.Tech","Jagran Lakecity University, Bhopal","2023 – 2027 (Pursuing)"],["Class XII","St. Francis Co-Ed School, Barrai, Bhopal","2022 – 2023"],["Class X","St. Francis Co-Ed School, Barrai, Bhopal","2020 – 2021"]];
+$("#edu").innerHTML = E.map(e=>`<div class="card"><h3>${e[0]}</h3><div>${e[1]}</div><div class="meta">${e[2]}</div></div>`).join("");
+$("#yr").textContent = new Date().getFullYear();
+
+// nav
+$("#menu").onclick = () => {const o=$("#links").classList.toggle("open");$("#menu").setAttribute("aria-expanded",o)};
+$("#links").addEventListener("click",e=>{if(e.target.matches("a"))$("#links").classList.remove("open")});
+document.addEventListener("keydown",e=>{if(e.key==="Escape")$("#links").classList.remove("open")});
+const navA = [...document.querySelectorAll(".links a[href^='#']")];
+const io = new IntersectionObserver(es=>es.forEach(en=>{if(en.isIntersecting)navA.forEach(a=>a.classList.toggle("on",a.getAttribute("href")==="#"+en.target.id))}),{rootMargin:"-40% 0px -55% 0px"});
+document.querySelectorAll("main section[id]").forEach(s=>io.observe(s));
+const rv = new IntersectionObserver(es=>es.forEach(en=>{if(en.isIntersecting){en.target.classList.add("in");rv.unobserve(en.target)}}),{threshold:.08});
+document.querySelectorAll(".reveal").forEach(s=>rv.observe(s));
+// theme
+try{const t=localStorage.getItem("theme");if(t)document.documentElement.dataset.theme=t}catch(e){}
+$("#theme").onclick = () => {const n=document.documentElement.dataset.theme==="light"?"dark":"light";document.documentElement.dataset.theme=n;try{localStorage.setItem("theme",n)}catch(e){}};
+
+// contact form: never fakes success
+$("#cf").addEventListener("submit", async e => {
+ e.preventDefault();
+ const f = e.target, fs = $("#fs"), d = Object.fromEntries(new FormData(f));
+ fs.className = "err";
+ if (d._gotcha) return;
+ if (!d.name.trim() || !d.subject.trim() || !d.message.trim()) { fs.textContent = "Please fill in every field."; return; }
+ if (!/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(d.email)) { fs.textContent = "Please enter a valid email address."; return; }
+ if (!FORM_ENDPOINT) {
+  fs.className = "";
+  fs.textContent = "Direct form delivery isn't configured yet, so your email app will open with your message.";
+  location.href = `mailto:${EMAIL}?subject=${encodeURIComponent(d.subject)}&body=${encodeURIComponent(d.message+"\n\nFrom: "+d.name+" ("+d.email+")")}`;
+  return;
+ }
+ const b = $("#send"); b.disabled = true; b.textContent = "Sending…";
+ try {
+  const r = await fetch(FORM_ENDPOINT,{method:"POST",headers:{"Content-Type":"application/json",Accept:"application/json"},body:JSON.stringify(d)});
+  if (!r.ok) throw new Error();
+  fs.className = "ok"; fs.textContent = "Message sent. Thank you!"; f.reset();
+ } catch { fs.className = "err"; fs.textContent = "Couldn't send your message. Please email me directly at "+EMAIL+"."; }
+ b.disabled = false; b.textContent = "Send message";
+});
+</script>
+</body>
+</html>
